@@ -1,0 +1,6 @@
+__pycache__/
+*.pyc
+anchor.json
+demo_anchor.json
+.ots_confirmed
+.DS_Store

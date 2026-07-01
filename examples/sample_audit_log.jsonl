@@ -1,0 +1,3 @@
+{"seq":1,"action":"create","record":"BATCH-2287"}
+{"seq":2,"action":"modify","record":"BATCH-2287","by":"analyst-42"}
+{"seq":3,"action":"output","record":"BATCH-2287","result":"pass"}
