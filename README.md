@@ -17,7 +17,13 @@ git clone https://github.com/MarkovianProtocol/audit-anchor
 cd audit-anchor
 ```
 
-That is it. There is nothing to install.
+The tool itself has no dependencies. To put the `audit-anchor` command on your path, install it:
+
+```
+pip install .
+```
+
+Or skip install entirely and run `python3 audit_anchor.py` directly.
 
 ## Usage
 
@@ -70,6 +76,27 @@ Each of these requires tamper-evident, time-stamped, independently verifiable au
 ## Scope and limits
 
 audit-anchor provides tamper-evidence, timestamping, and operator-independent verifiability of a record. It does not capture events for you, it does not judge whether the logged content is correct, and it is not a compliance system and not legal advice. Automatic capture and retention of the log remain the operator's responsibility.
+
+## Tests
+
+```
+python3 tests/test_audit_anchor.py
+```
+
+Or the built-in offline self-test, which includes tamper and reorder detection:
+
+```
+python3 audit_anchor.py --selftest
+```
+
+CI runs both on every push, across Python 3.8, 3.11, and 3.12.
+
+## Integrations
+
+Worked examples in `examples/`, so you can wire anchoring into a stack you already run. Each needs only its own framework; the core stays dependency-free.
+
+- `examples/mcp_tool.py` exposes anchor and verify as Model Context Protocol tools, so an MCP agent can anchor its own audit log in-session. Needs `pip install mcp`.
+- `examples/langchain_callback.py` is a LangChain callback that turns an agent run into an anchorable audit trail. Needs `pip install langchain-core`.
 
 ## License
 

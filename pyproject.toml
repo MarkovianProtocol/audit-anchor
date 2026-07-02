@@ -1,0 +1,33 @@
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "audit-anchor"
+version = "0.1.0"
+description = "Anchor any audit log to Bitcoin, so a third party can confirm it was not altered without trusting the operator."
+readme = "README.md"
+license = { text = "MIT" }
+requires-python = ">=3.8"
+authors = [{ name = "SigmaSynth LLC", email = "hello@quantsynth.net" }]
+keywords = ["audit", "audit-trail", "provenance", "bitcoin", "tamper-evident", "compliance", "eu-ai-act", "21-cfr-part-11"]
+classifiers = [
+    "Development Status :: 4 - Beta",
+    "Intended Audience :: Developers",
+    "License :: OSI Approved :: MIT License",
+    "Programming Language :: Python :: 3",
+    "Topic :: Security :: Cryptography",
+    "Topic :: Software Development :: Libraries :: Python Modules",
+]
+dependencies = []
+
+[project.urls]
+Homepage = "https://markovianprotocol.com"
+Repository = "https://github.com/MarkovianProtocol/audit-anchor"
+Showcase = "https://markovianprotocol.com/showcase.html"
+
+[project.scripts]
+audit-anchor = "audit_anchor:main"
+
+[tool.setuptools]
+py-modules = ["audit_anchor"]
