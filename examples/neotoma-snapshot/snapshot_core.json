@@ -1,0 +1,26 @@
+{
+  "entity_id": "credit_decision:app-4471",
+  "entity_type": "credit_decision",
+  "schema_version": "1",
+  "at": "2026-07-01T23:59:59Z",
+  "at_ingested": "2026-07-01T23:59:59Z",
+  "snapshot": {
+    "applicant_id": "app-4471",
+    "amount_usd": 24000,
+    "status": "declined",
+    "risk_score": 0.71,
+    "reviewed_by": "reviewer-114",
+    "notes": "income unverified",
+    "decline_reason": "income_unverified"
+  },
+  "provenance": {
+    "applicant_id": "obs_01",
+    "amount_usd": "obs_01",
+    "status": "obs_04",
+    "risk_score": "obs_02",
+    "reviewed_by": "obs_03",
+    "notes": "obs_03",
+    "decline_reason": "obs_04"
+  },
+  "observation_count": 4
+}
