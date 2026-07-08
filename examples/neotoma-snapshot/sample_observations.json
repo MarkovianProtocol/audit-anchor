@@ -1,0 +1,26 @@
+[
+  {"id": "obs_01", "entity_id": "credit_decision:app-4471", "entity_type": "credit_decision", "schema_version": "1",
+   "observed_at": "2026-07-01T14:02:00Z", "created_at": "2026-07-01T14:02:03Z",
+   "observation_source": "llm_summary", "provenance": {"agent": "agent:intake-v2"},
+   "values": {"applicant_id": "app-4471", "amount_usd": 24000, "status": "received"}},
+
+  {"id": "obs_02", "entity_id": "credit_decision:app-4471", "entity_type": "credit_decision", "schema_version": "1",
+   "observed_at": "2026-07-01T14:06:30Z", "created_at": "2026-07-01T14:06:31Z",
+   "observation_source": "workflow_state", "provenance": {"agent": "agent:underwriter-v3"},
+   "values": {"risk_score": 0.71, "status": "under_review"}},
+
+  {"id": "obs_03", "entity_id": "credit_decision:app-4471", "entity_type": "credit_decision", "schema_version": "1",
+   "observed_at": "2026-07-01T14:09:10Z", "created_at": "2026-07-01T14:09:12Z",
+   "observation_source": "human", "provenance": {"agent": "user:reviewer-114"},
+   "values": {"reviewed_by": "reviewer-114", "notes": "income unverified"}},
+
+  {"id": "obs_04", "entity_id": "credit_decision:app-4471", "entity_type": "credit_decision", "schema_version": "1",
+   "observed_at": "2026-07-01T14:12:00Z", "created_at": "2026-07-01T14:12:02Z",
+   "observation_source": "workflow_state", "provenance": {"agent": "agent:underwriter-v3"},
+   "values": {"status": "declined", "decline_reason": "income_unverified"}},
+
+  {"id": "obs_05_backfilled", "entity_id": "credit_decision:app-4471", "entity_type": "credit_decision", "schema_version": "1",
+   "observed_at": "2026-07-01T14:05:00Z", "created_at": "2026-07-02T09:00:00Z",
+   "observation_source": "sync", "provenance": {"agent": "agent:backfill"},
+   "values": {"status": "approved"}}
+]
