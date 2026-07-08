@@ -1,0 +1,15 @@
+{
+  "kind": "neotoma-snapshot-anchor/v1",
+  "source": "Neotoma /get_entity_snapshot (deterministic bi-temporal reduction)",
+  "entity_id": "credit_decision:app-4471",
+  "at": "2026-07-01T23:59:59Z",
+  "at_ingested": "2026-07-01T23:59:59Z",
+  "observation_count": 4,
+  "snapshot_root": "0x8bcf55249af23fed86a7ab332ea16849729d5e3ec6086343ef21a6dd8c96a04a",
+  "canonicalization": "RFC 8785 (JCS) over the deterministic snapshot core; wall-clock computed_at excluded",
+  "anchor": {
+    "type": "opentimestamps",
+    "ots_b64": "AE9wZW5UaW1lc3RhbXBzAABQcm9vZgC/ieLohOiSlAEIQcKXuNPQLW3rFoWACuLejV3W5jI8t8mwN2HXL2hZKwPwEBUgyd217PamE/rDCnNOiacI//AIxGNFndLVqJ0I8BA7ejvM7vkxYiyu02ifhcMnCPEgIRWLbm+V606GgUfO1B+mXox8FW5birEDKgJS14cI/FwI8QRqTdGk8AgDAQiuC6kLWwCD3+MNLvkMjiwraHR0cHM6Ly9ib2IuYnRjLmNhbGVuZGFyLm9wZW50aW1lc3RhbXBzLm9yZ//wEMZlM2VUQaWjXdF3Wud44HEI8QRqTdGl8AhY+EHTDp5/egCD3+MNLvkMjiMiaHR0cHM6Ly9idGMuY2FsZW5kYXIuY2F0YWxsYXh5LmNvbf/wEMoSDj8EgLRdQswMKv7W61AI8SCvjDleYy0y0pMUVOvlC2JX1nV9ORDIPfGOc4Uz5c+FygjwIBHOABPlPBdF7KYouuU0GSojE0xHoGVQa+GVxRPRs6dLCPEEak3RpfAIt4c2rQK8tKYAg9/jDS75DI4pKGh0dHBzOi8vZmlubmV5LmNhbGVuZGFyLmV0ZXJuaXR5d2FsbC5jb23wCO0QgYlkDmSbCPEguqoF5KKlmwvH2AX71GS30qyM19w+dvE7fwUOKGPNPHwI8BCUinjkZgPqcmEKmnNvegh8CPAg+40v+TMDQb6s6FLeZnIPh2LKFdK8q93OdcsAu60Saf4I8CBwGiP7GBTJCwjYf5xYIibXsLYZKcfID2PyPO23yDAGpgjxBGpN0aXwCEJtzufguJQzAIPf4w0u+QyOLi1odHRwczovL2FsaWNlLmJ0Yy5jYWxlbmRhci5vcGVudGltZXN0YW1wcy5vcmc=",
+    "status": "submitted"
+  }
+}
