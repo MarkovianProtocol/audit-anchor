@@ -1,0 +1,28 @@
+=== BUILD/VERIFY TRANSCRIPT 2026-07-10T07:23:10Z ===
+
+$ git ls-remote https://git.savannah.gnu.org/git/guix.git refs/heads/master
+1798fa9f53f9e03697daaafb9d618e929855fa30	refs/heads/master
+
+$ cat commit_id.txt (hexdump, 40 bytes no newline)
+00000000: 3137 3938 6661 3966 3533 6639 6530 3336  1798fa9f53f9e036
+00000010: 3937 6461 6161 6662 3964 3631 3865 3932  97daaafb9d618e92
+00000020: 3938 3535 6661 3330                      9855fa30
+
+$ shasum -a 256 commit_id.txt
+7727bf2cde6ce99cb80e90c5cb31a8f94ce74d5c5a56383d075ec599bdcbf38f  commit_id.txt
+
+$ ots info commit_id.txt.ots
+File sha256 hash: 7727bf2cde6ce99cb80e90c5cb31a8f94ce74d5c5a56383d075ec599bdcbf38f
+Timestamp:
+append 18e9175f9b992ca812a400625f9653a4
+sha256
+ -> append 208514043cc217d8
+    sha256
+  ... (attestation paths truncated)
+
+$ ots verify commit_id.txt.ots
+Assuming target filename is 'commit_id.txt'
+Calendar https://alice.btc.calendar.opentimestamps.org: Pending confirmation in Bitcoin blockchain
+Calendar https://finney.calendar.eternitywall.com: Pending confirmation in Bitcoin blockchain
+Calendar https://btc.calendar.catallaxy.com: Pending confirmation in Bitcoin blockchain
+Calendar https://bob.btc.calendar.opentimestamps.org: Pending confirmation in Bitcoin blockchain
