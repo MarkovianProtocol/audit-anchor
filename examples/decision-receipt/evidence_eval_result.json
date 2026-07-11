@@ -8,7 +8,7 @@
       }
     }
   ],
-  "predicateType": "https://in-toto.io/attestation/eval-result/v0.1",
+  "predicateType": "https://b7n0de.com/attestation/eval-result/v0.1",
   "predicate": {
     "harness": {
       "name": "deepeval",

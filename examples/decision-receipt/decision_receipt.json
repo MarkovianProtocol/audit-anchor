@@ -8,7 +8,7 @@
       }
     }
   ],
-  "predicateType": "proofbundle/predicates/decision-receipt/v0.1",
+  "predicateType": "https://b7n0de.com/proofbundle/predicates/decision-receipt/v0.1",
   "predicate": {
     "action": "deploy",
     "verdict": "allow",
@@ -20,9 +20,9 @@
     },
     "evidenceRefs": [
       {
-        "predicateType": "https://in-toto.io/attestation/eval-result/v0.1",
+        "predicateType": "https://b7n0de.com/attestation/eval-result/v0.1",
         "digest": {
-          "sha256": "a86058b3b338555de20090e4901d003230a3e1e29a7cca97ddd0295e376261da"
+          "sha256": "323adb188f840e90331c920b32a73f348acc5caea8d40f9a84ea384d46c258d4"
         }
       }
     ],
