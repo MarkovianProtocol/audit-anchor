@@ -1,0 +1,16 @@
+{
+  "artifact": {
+    "name": "acme-intent-classifier",
+    "version": "1.4.2",
+    "digest": {
+      "sha256": "2f0aea2dae36951bbf0eb604a98041cc78ec55f85bf84bb5a6bea96f38c8922e"
+    }
+  },
+  "environment": {
+    "name": "prod",
+    "rollout": {
+      "strategy": "canary",
+      "initialTrafficPercent": 10
+    }
+  }
+}
